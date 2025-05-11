@@ -1,6 +1,10 @@
 import { Tree } from "./tree.js";
 
-const arr = [9, 3, 1, 4, 8, 9, 2];
+const arr = [9, 3, 1, 4, 18, 9, 2, 10];
 const tree = new Tree(arr);
 
-console.log(tree.buildTree(arr));
+tree.buildTree(arr);
+tree.prettyPrint(tree.root);
+
+tree.delete(4);
+tree.prettyPrint(tree.root);
