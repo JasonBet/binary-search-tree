@@ -1,4 +1,6 @@
-import "./styles.css";
-import { greeting } from "./greeting.js";
+import { Tree } from "./tree.js";
 
-console.log(greeting);
+const arr = [9, 3, 1, 4, 8, 9, 2];
+const tree = new Tree(arr);
+
+console.log(tree.buildTree(arr));
